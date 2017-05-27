@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Generar Encuesta
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+     <form [formGroup]="form" padding>
+    <ion-item>
+
+       <ion-label color="primary" stacked>Nombre de la Encuesta:</ion-label>
+    <ion-input type="text" placeholder=""formControlName="nombre"></ion-input>
+      
+    </ion-item>
+    <ion-item>
+     <ion-label color="primary" stacked>Pregunta:</ion-label>
+    <ion-input type="text" placeholder=""formControlName="pregunta"></ion-input>
+      
+
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" stacked>Respuesta 1:</ion-label>
+    <ion-input type="text" placeholder=""formControlName="respuesta1"></ion-input>
+      
+    
+      
+    </ion-item>
+    <ion-item>
+     
+     <ion-label color="primary" stacked>Respuesta 2:</ion-label>
+    <ion-input type="text" placeholder=""formControlName="respuesta2"></ion-input>
+      
+    
+      
+    </ion-item>
+    <ion-item>
+     
+       <ion-label color="primary" stacked>Respuesta 3:</ion-label>
+    <ion-input type="text" placeholder=""formControlName="respuesta3"></ion-input>
+       </ion-item>
+     <ion-item>
+<button ion-button round outline (click)="altaencuesta()">Crear Encuesta</button> </ion-item>
+  </form>
+  </ion-list>
+</ion-content>
