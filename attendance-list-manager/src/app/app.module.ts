@@ -4,7 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { HttpModule } from "@angular/http";
 import { IonicStorageModule } from "@ionic/storage";
 import { MyApp } from './app.component';
-
+import { assistAndAbsences } from '../pages/assistAndAbsences/assistAndAbsences';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -28,7 +28,8 @@ import { AppService } from "../providers/app-service";
     RegisteredUserPage,
     gestionalumno,
     gestionprofesor,
-    generarencuesta
+    generarencuesta,
+    assistAndAbsences 
   ],
   imports: [
     BrowserModule,
@@ -47,7 +48,8 @@ import { AppService } from "../providers/app-service";
     RegisteredUserPage,
     gestionalumno,
     gestionprofesor,
-    generarencuesta
+    generarencuesta,
+    assistAndAbsences 
   ],
   providers: [
     StatusBar,

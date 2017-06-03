@@ -6,6 +6,7 @@ import { AppService } from "../../providers/app-service";
 import { HomePage } from "../../pages/home/home";
 
 import { Survey } from "../../app/entities/survey";
+import {assistAndAbsences} from "../../pages/assistAndAbsences/assistAndAbsences";
 
 import {gestionalumno } from "../../pages/gestionalumno/gestionalumno";
 import {gestionprofesor } from "../../pages/gestionprofesor/gestionprofesor";
@@ -91,7 +92,17 @@ accedera(a){
 // if(a="Gestionar Encuesta"){this.navCtrl.setRoot(generarencuesta);}
 
 
-}insertar()
+}
+asistencias(){
+
+this.navCtrl.setRoot(assistAndAbsences);
+
+
+
+
+}
+
+insertar()
 {this.storage.get("rol").then(val=>{this.Tipousuario=val});
 
 if(this.Tipousuario=='Administrator'){

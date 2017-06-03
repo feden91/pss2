@@ -37,93 +37,25 @@
         <div>1</div>
     </template>
     <template [ngSwitchCase]='Teacher'>
-        <div>2</div>
+        <div><ion-title>Profesor</ion-title>
+    <button ion-button small>Nueva Encuesta</button>
+    <button ion-button small>Borrar Encuesta</button>
+    <button ion-button small>Ver Encuesta</button></div>
     </template>
     <template [ngSwitchCase]="Student">
-        <div>
-          <ion-card>
+         <div>
 
-  <ion-card-header>
-    Pregunta Radio : 
-  </ion-card-header>
-  
-  <ion-card-content>
-   
-  <ion-list radio-group [(ngModel)]="respuestas">
-  <ion-item >
-    <ion-label>Respuesta1</ion-label>
-    <ion-radio value="Respuesta1" checked></ion-radio>
-  </ion-item >
-  <ion-item>
-    <ion-label>Respuesta2</ion-label>
-    <ion-radio value="Respuesta2"></ion-radio>
-  </ion-item>
-  <ion-item >
-    <ion-label>Respuesta3</ion-label>
-    <ion-radio value="Respuesta3" ></ion-radio>
-  </ion-item>
-  <ion-item > <button ion-button round outline >Responder</button>    </ion-item>
-</ion-list>
-  </ion-card-content>
+  <ion-toolbar>
+    Alumno
+    <button ion-button round  (click)="asistencias()">Materia y Asistencias</button>
+    <button ion-button round>Materia X</button>
+    <button ion-button round>Materia z</button>
+    <button ion-button round>Encuestas</button>
+    
+  </ion-toolbar>
 
-</ion-card>
-
-</div> 
-
-<div>
-          <ion-card>
-
-  <ion-card-header>
-    Pregunta Check Box: 
-  </ion-card-header>
-  
-  <ion-card-content>
-   <ion-list>
- 
-  <ion-item >
-    <ion-label>Respuesta1</ion-label>
-   <ion-checkbox [(ngModel)]="Respuesta1" disabled="false"></ion-checkbox>
-  </ion-item >
-  <ion-item>
-    <ion-label>Respuesta2</ion-label>
-    <ion-checkbox [(ngModel)]="Respuesta2" disabled="false"></ion-checkbox>
-  </ion-item>
-  <ion-item >
-    <ion-label>Respuesta3</ion-label>
-    <ion-checkbox [(ngModel)]="Respuesta3" disabled="false"></ion-checkbox>
-  </ion-item>
-  <ion-item > <button ion-button round outline >Responder</button>    </ion-item>
-</ion-list>
-  </ion-card-content>
-
-</ion-card>
 
 </div>
-
-<div>
-          <ion-card>
-
-  <ion-card-header>
-    Pregunta Text Box: 
-  </ion-card-header>
-  
-  <ion-card-content>
-   <ion-list>
- 
-  <ion-item >
-    Respuesta:
-    <ion-textarea>  </ion-textarea>
-  </ion-item>
-  <ion-item > <button ion-button round outline >Responder</button>    </ion-item>
-</ion-list>
-  </ion-card-content>
-
-</ion-card>
-
-</div>
-    </template>
-    <template [ngSwitchCase]="3">
-        <div>4</div>
     </template>
 </div>
   
