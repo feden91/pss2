@@ -7,7 +7,7 @@ import { HomePage } from "../../pages/home/home";
 
 import { Survey } from "../../app/entities/survey";
 import {assistAndAbsences} from "../../pages/assistAndAbsences/assistAndAbsences";
-
+import {gestionarasistencia } from "../../pages/gestionarasistencia/gestionarasistencia";
 import {gestionalumno } from "../../pages/gestionalumno/gestionalumno";
 import {gestionprofesor } from "../../pages/gestionprofesor/gestionprofesor";
 import { generarencuesta } from "../../pages/generarencuesta/generarencuesta";
@@ -101,6 +101,7 @@ this.navCtrl.setRoot(assistAndAbsences);
 
 
 }
+gAsistencia(){this.navCtrl.setRoot(gestionarasistencia);}
 
 insertar()
 {this.storage.get("rol").then(val=>{this.Tipousuario=val});

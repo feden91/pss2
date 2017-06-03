@@ -16,6 +16,7 @@ import {generarencuesta} from "../pages/generarencuesta/generarencuesta";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AppService } from "../providers/app-service";
+import {gestionarasistencia} from "../pages/gestionarasistencia/gestionarasistencia";
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AppService } from "../providers/app-service";
     gestionalumno,
     gestionprofesor,
     generarencuesta,
-    assistAndAbsences 
+    assistAndAbsences,
+    gestionarasistencia 
   ],
   imports: [
     BrowserModule,
@@ -49,7 +51,8 @@ import { AppService } from "../providers/app-service";
     gestionalumno,
     gestionprofesor,
     generarencuesta,
-    assistAndAbsences 
+    assistAndAbsences,
+    gestionarasistencia 
   ],
   providers: [
     StatusBar,
